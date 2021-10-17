@@ -1,7 +1,7 @@
 const { type } = require("os");
 
 describe("Refine", function () {
-  it("Refine flow:legal, sale-2 with all upsells", function () {
+  it("Refine flow:legal, sale-2, Pay Pal", function () {
 
     cy.visit('https://refineapp.me/') //указываем при помощи команды cy.visit сайт, который будем тестсить
 
@@ -52,8 +52,6 @@ describe("Refine", function () {
     console.log(url);
     payPalFrame.openedWindows.push(payPalFrame._open(url,name,params));
     // you can store names also...
-}
-    
-
+  } 
   })
 })
